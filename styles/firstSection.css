@@ -1,0 +1,202 @@
+.firstSection {
+    display: flex;
+    flex-direction: row;
+
+    padding-top: 25rem;
+
+    justify-content: space-around;
+    align-items: center;
+}
+#divApresent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 55rem;
+}
+#divApresent h1 {
+    font-size: 6.5rem;
+    font-family: 'Sono';
+    font-weight: 600;
+}
+#divApresent p {
+    font-size: 4rem;
+    font-family: 'Open Sans';
+    font-weight: 600;
+}
+#divApresent button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    width: 50rem;
+    height: 5rem;
+
+    margin-top: 2rem;
+
+    background: #4071b1;
+    color: white;
+
+    border: none;
+    border-radius: 2rem;
+
+    font-size: 3rem;
+    font-family: 'Open Sans';
+    font-weight: 700;
+
+}
+
+.line {
+    border-right: 2px solid rgba(255, 255, 255, 0.75);
+    color: rgba(255, 255, 255, 0.75);
+
+    font-family: 'Sono';
+    font-size: 6.5rem;
+
+    margin: 0 auto;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center;
+}
+
+.type-animation {
+    animation:
+    cursor 500ms steps(28) infinite normal,
+    type 2.5s steps(28) 1s normal both;
+}
+
+@keyframes type {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 52.4rem;
+    }
+}
+
+@keyframes cursor {
+    from {
+        border-right-color: rgba(255, 255, 255, 0.75);
+    }
+
+    to {
+        border-right-color: transparent; 
+    }
+}
+
+.gitHub {
+    position: absolute;
+    margin-top: 2.1rem;
+    margin-left: -59.1rem;
+    width: 25.5rem;
+    height: 16.1rem;
+}
+.gitHubHide {
+    display: none;
+}
+
+.gitHubProfile {
+    width: 50.5rem;
+    position: absolute;
+    margin-top: 1.7rem;
+    margin-left: -59.1rem;
+}
+.arrow-back {
+    position: absolute;
+    margin-top: 23rem;
+    margin-left: -56.1rem;
+    
+    width: 7rem;
+
+    cursor: pointer;
+}
+.arrow-backHide {
+    display: none;
+}
+.gitHubProfileHide {
+    display: none;
+}
+
+
+.sobreMim {
+    position: absolute;
+    margin-top: 2.1rem;
+    margin-left: -33.6rem;
+
+    width: 25rem;
+    height: 16.1rem;
+}
+.sobreMimHide {
+    display: none;
+}
+.pageSobreMim {
+    width: 50.5rem;
+    height: 31.7rem;
+    position: absolute;
+    margin-top: 2.1rem;
+    margin-left: -59.1rem;
+}
+.pageSobreMimHide {
+    display: none;
+}
+.arrow-backObra {
+    position: absolute;
+    margin-top: 3rem;
+    margin-left: -58rem;
+    width: 5.5rem;
+}
+.arrow-backObraHide {
+    display: none;
+}
+
+
+.cardHabilidades {
+    position: absolute;
+    margin-top: 18.2rem;
+    margin-left: -59.1rem;
+
+    width: 25.5rem;
+    height: 15.6rem;
+}
+.cardHabilidadesHide {
+    display: none;
+}
+.pageHabilidades {
+    width: 50.5rem;
+    height: 31.7rem;
+    position: absolute;
+    margin-top: 2.1rem;
+    margin-left: -59.1rem;
+}
+.pageHabilidadesHide {
+    display: none;
+}
+
+
+
+
+
+.cardProjetos {
+    position: absolute;
+    margin-top: 18.2rem;
+    margin-left: -33.6rem;
+
+    width: 25rem;
+    height: 15.6rem;
+}
+.cardProjetosHide {
+    display: none;
+}
+.pageProjetos {
+    width: 50.5rem;
+    height: 31.7rem;
+    position: absolute;
+    margin-top: 2.1rem;
+    margin-left: -59.1rem;
+}
+.pageProjetosHide {
+    display: none;
+}

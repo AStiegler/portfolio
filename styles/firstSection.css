@@ -2,10 +2,13 @@
     display: flex;
     flex-direction: row;
 
-    padding-top: 25rem;
+    width: 100vw;
+    height: 100vh;
 
     justify-content: space-around;
     align-items: center;
+
+    background: linear-gradient(to bottom right, var(--blue-dark) 50%, var(--pink) 50%);
 }
 #divApresent {
     display: flex;
@@ -18,11 +21,18 @@
     font-size: 6.5rem;
     font-family: 'Sono';
     font-weight: 600;
+    
+    color: white;
 }
 #divApresent p {
     font-size: 4rem;
     font-family: 'Open Sans';
     font-weight: 600;
+
+    color: var(--pink);
+}
+#divApresent a {
+    text-decoration: none;
 }
 #divApresent button {
     display: flex;
@@ -35,7 +45,7 @@
 
     margin-top: 2rem;
 
-    background: #4071b1;
+    background: var(--pink);
     color: white;
 
     border: none;
@@ -44,7 +54,9 @@
     font-size: 3rem;
     font-family: 'Open Sans';
     font-weight: 700;
-
+    text-decoration: none;
+    
+    cursor: pointer;
 }
 
 .line {
@@ -99,10 +111,11 @@
 }
 
 .gitHubProfile {
-    width: 50.5rem;
     position: absolute;
-    margin-top: 1.7rem;
-    margin-left: -59.1rem;
+    width: 50.7rem;
+    height: 31.9rem;
+    margin-top: 2rem;
+    margin-left: -59.2rem;
 }
 .arrow-back {
     position: absolute;

@@ -1,0 +1,110 @@
+.secondSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(90deg,#050939 0%,#141a61 47.57%,#050939 93.19%);
+
+    border-top: 3px solid var(--pink);
+
+}
+
+.secondSection h1 {
+    font-size: 7.6rem;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--pink);
+    margin-top: 13rem;
+}
+.area4H1 {
+    visibility: hidden;
+}
+
+.project-flex {
+    display: flex;
+    flex-direction: column;
+    margin-top: 6rem;
+    gap: 2rem;
+}
+
+.column1, .column2 {
+    display: flex;
+    gap: 2rem;
+}
+
+
+.figProject {
+    position: relative;
+    overflow: hidden;
+    border-radius: 2rem;
+}
+.projectThumb {
+    width: 40rem;
+    height: 26.5rem;
+
+   border: none;
+   border-radius: 2rem;
+
+   transition: all 500ms ease-out;
+}
+
+
+
+.thumbText {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    position: absolute;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: black;
+    border: none;
+    border-radius: 2rem;
+    color: white;
+
+    opacity: 0;
+    visibility: hidden;
+
+    text-align: center;
+    
+    font-family: 'Sono';
+    font-size: 2rem;
+
+    transition: all 500ms ease-out;
+}
+.thumbButton {
+    width: 20rem;
+    height: 5rem;
+
+    border: 1px solid var(--blue-dark);
+    border-radius: 2rem;
+
+    font-family: 'Sono';
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--blue);
+
+    cursor: pointer;
+}
+.thumbButton:hover {
+    background: var(--blue);
+    color: white;
+}
+.project figure:hover > .thumbText {
+    opacity: 1;
+    visibility: visible;
+}
+.project figure:hover >.projectThumb {
+    transition: transform .2s;
+    transform: scale(1.2);
+}
+.project figure:hover {
+    border-radius: 2rem;
+}
+
+

@@ -7,26 +7,51 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+    <script src="https://unpkg.com/scrollreveal"></script>
     <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Sono:wght@200;400;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600;700&family=Sono:wght@200;400;600;700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/header.css">
     <link rel="stylesheet" href="./styles/firstSection.css">
+    <link rel="stylesheet" href="./styles/secondSection.css">
+    <link rel="stylesheet" href="./styles/thirdSection.css">
+    <link rel="stylesheet" href="./styles/fourthSection.css">
+    <link rel="stylesheet" href="./styles/footer.css">
     <title>Alan Stiegler</title>
+
 </head>
 
 <body>
 
     <!----------------------------------------HEADER---------------------------------------->
-    <header>
-        <!--empty-->
+    <header id="header" class="headerHide">
+        <div class="menu">
+
+
+            <ul>
+
+                <li id="menuInicio" class="barra"><a class="opaco" href="#Início">Início</a></li>
+
+                <li id="menuProjetos" class="barra"><a class="opaco" href="#Projetos">Projetos</a></li>
+
+                <li id="menuSobreMim" class="barra"><a class="opaco" href="#SobreMim">Sobre Mim</a></li>
+
+                <li id="menuHabilidades" class="barra"><a class="opaco" href="#Habilidades">Habilidades</a></li>
+
+
+
+            </ul>
+
+        </div>
+
     </header>
 
     <!----------------------------------------FIRST SECTION---------------------------------------->
-    <section class="firstSection">
-        
+    <section id="Início" class="firstSection">
+
+
         <div id="divApresent">
             <p>Oi, eu sou</p>
             <h1 class="line type-animation">Alan Stiegler</h1>
@@ -34,48 +59,295 @@
             <a href="https://www.linkedin.com/in/alan-bem-a27993217/" target="_blank">
                 <button>Linkedin</button>
             </a>
-            
+
 
         </div>
 
-        <div id="divImgMac">
+        <div id="divImgMac" class="area1">
             <!--img macbook-->
             <img id="macBook" class="macBook" src="./assets//mac2.png" alt="">
 
-            <!--Card GitHub-->
-            <img onclick="macBookGitHub()" id="gitHub" class="gitHub" src="./assets/github.jpeg" alt="">
-            <!--Perfil GitHub-->
-            <img id="gitHubProfile" class="gitHubProfile gitHubProfileHide" src="./assets/githubAlan.png" alt="">
-            <img onclick="arrowGitHubProfile()" id="arrowBack" class="arrow-back arrow-backHide"
-                src="./assets/arrowBackSvg.svg" alt="">
 
-            <!--Card Sobre Mim-->
-            <img onclick="macBookSobreMim()" id="sobreMim" class="sobreMim" src="./assets/SobreMim.png" alt="">
-            <!--Sobre Mim-->
-            <img id="pageSobreMim" class="pageSobreMim pageSobreMimHide" src="./assets/obra.png" alt="">
-            <img onclick="arrowObra()" id="arrowBackObra" class="arrow-backObra arrow-backObraHide"
-                src="./assets/arrowBack - Obra.png" alt="">
 
-            <!--Card Habilidades-->
-            <img onclick="macBookHabilidades()" id="cardHabilidades" class="cardHabilidades"
-                src="./assets/Habilidades.png" alt="">
-            <!--Page Habilidades-->
-            <img id="pageHabilidades" class="pageHabilidades pageHabilidadesHide" src="./assets/obra.png" alt="">
-            <img onclick="arrowObra()" id="arrowBackObra" class="arrow-backObra arrow-backObraHide"
-                src="./assets/arrowBack - Obra.png" alt="">
 
-            <!--Card Projetos-->
-            <img onclick="macBookProjetos()" id="cardProjetos" class="cardProjetos" src="./assets/Projetos.png" alt="">
-            <!--Page Projetos-->
-            <img id="pageProjetos" class="pageProjetos pageProjetosHide" src="./assets/obra.png" alt="">
+           
+        </div>
+
+    </section>
+
+    <!----------------------------------------SECOND SECTION---------------------------------------->
+    <section id="Projetos" class="secondSection">
+
+        <h1 class="area4H1">Projetos</h1>
+
+        <div class="project-flex">
+
+            <div class="column1">
+                <div class="project">
+                    <figure class="figProject">
+                        <img class="projectThumb" src="./assets/todoThumb.jpg"
+                            alt="Imagem de um projejto de To do list">
+                        <div class="thumbText">
+                            <p>ToDo list feito com ReactJS e TypeScript</p>
+                            <a href=""><button class="thumbButton">Ver Projeto</button></a>
+                        </div>
+                    </figure>
+                </div>
+
+                <div class="project">
+                    <figure class="figProject">
+                        <img class="projectThumb thumbZoom" src="./assets/spaceThumb.jpg"
+                            alt="Imagem com o nome de um site de turismo espacial com o planeta terra ao fundo">
+                        <div class="thumbText">
+                            <p>Site de agência de turismo espacial feito com HTML, CSS e JavaScript</p>
+                            <a href="https://astiegler.github.io/Space/home" target="_blank"><button
+                                    class="thumbButton">Ver Projeto</button></a>
+                        </div>
+                    </figure>
+                </div>
+
+                <div class="project">
+                    <figure class="figProject">
+                        <img class="projectThumb" src="./assets/igniteThumb.jpg"
+                            alt="Logo de uma aplicação de Pomodoro Timer">
+                        <div class="thumbText">
+                            <p>Timer para tarefas feito com ReactJS e TypeScript</p>
+                            <a href=""><button class="thumbButton">Ver Projeto</button></a>
+                        </div>
+                    </figure>
+                </div>
+
+            </div>
+
+            <div class="column2">
+
+                <div class="project">
+                    <figure class="figProject">
+                        <img class="projectThumb" src="./assets/doctorCareThumb.jpg"
+                            alt="Logo de um site de assistência médica, Doctor Care">
+                        <div class="thumbText">
+                            <p>Landing page de assistência médica feita com HTML, CSS e JavaScript</p>
+                            <a href="https://astiegler.github.io/DoctorCare/#home" target="_blank"><button
+                                    class="thumbButton">Ver Projeto</button></a>
+                        </div>
+                    </figure>
+                </div>
+
+                <div class="project">
+                    <figure class="figProject">
+                        <img class="projectThumb thumbZoom" src="./assets/rocketflixThumb.jpg"
+                            alt="Logo de uma aplicação que escolhe filmes aleatóriamente">
+                        <div class="thumbText">
+                            <p>Aplicação que escolhe filmes<br> de modo aleatório</p>
+                            <a href=""><button class="thumbButton">Ver Projeto</button></a>
+                        </div>
+                    </figure>
+                </div>
+
+                <div class="project">
+                    <figure class="figProject">
+                        <img class="projectThumb" src="./assets/blogThumb.jpg"
+                            alt="Imagem da página inicial de um blog">
+                        <div class="thumbText">
+                            <p>Página inicial de blog<br>feito comHTML, CSS e<br>JavaScript</p>
+                            <a href=""><button class="thumbButton">Ver Projeto</button></a>
+                        </div>
+                    </figure>
+                </div>
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <!----------------------------------------THIRD SECTION---------------------------------------->
+
+    <section id="SobreMim" class="thirdSection">
+
+        <h1 class="area2H1">Sobre Mim</h1>
+
+        <div class="divSobreMim">
+
+            <div class="divSobreImg">
+                <img src="./assets/sobreImg.svg"
+                    alt="Desenho de um programador trabalhando em sua mesa com 3 monitores e várias folhas de papel na parede com linhass de código">
+            </div>
+
+
+            <div class="divSobreTxt">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla quaerat sapiente dolores, iure atque,
+                accusamus mollitia esse possimus beatae sit debitis, vero quidem? Cumque, repellat commodi! Rerum
+                debitis aut ullam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla quaerat sapiente
+                dolores, iure atque,
+                accusamus mollitia esse possimus beatae sit debitis, vero quidem?
+            </div>
+
+
 
 
         </div>
 
     </section>
 
+    <!----------------------------------------FOURTH SECTION---------------------------------------->
+    <section id="Habilidades" class="fourthSection">
 
 
+        <h1 class="area3H1">Habilidades</h1>
+
+        <div class="mainHabilidades">
+
+
+                
+            <input id="input1" class="inputHabilidades" type="radio" name="position"/>
+            <input id="input2" class="inputHabilidades" type="radio" name="position" />
+            <input id="input3" class="inputHabilidades" type="radio" name="position" />
+            <input id="input4" class="inputHabilidades" type="radio" name="position" checked />
+            <input id="input5" class="inputHabilidades" type="radio" name="position" />
+            <input id="input6" class="inputHabilidades" type="radio" name="position" />
+            <input id="input7" class="inputHabilidades" type="radio" name="position" />
+            <input id="input8" class="inputHabilidades" type="radio" name="position" />
+
+
+            <div id="carousel" class="cardAnimation1">
+
+
+                <div id="item1" class="item">
+                    <div class="card card1Color">
+                        <img id="cardImg" src="./assets/logoHtml.svg" alt="HTML Logo">
+                        <h3>HTML</h3>
+                        <p>The Egyptian pyramids are ancient pyramid-shaped masonry structures located in Egypt. As of
+                            November 2008, sources cite either 118 or 138 as the number of identified Egyptian pyramids.
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="item">
+                    <div class="card card2Color">
+                        <img id="cardImg" src="./assets/logoCss.svg" alt="CSS Logo">
+                        <h3>CSS</h3>
+                        <p>The Statue of Liberty is a colossal neoclassical sculpture on Liberty Island in New York
+                            Harbor
+                            in New York City, in the United States.</p>
+                    </div>
+                </div>
+
+
+                <div class="item">
+                    <div class="card card3Color">
+                        <img id="cardImg" src="./assets/logoSass.svg" alt="SASS Logo">
+                        <h3>SASS</h3>
+                        <p>The Taj Mahal is an ivory-white marble mausoleum on the south bank of the Yamuna river in the
+                            Indian city of Agra. It was commissioned in 1632 by the Mughal emperor.</p>
+                    </div>
+                </div>
+
+
+                <div class="item">
+                    <div class="card card4Color">
+                        <img id="cardImg" src="./assets/logoJavaScript.svg" alt="JavaScript Logo">
+                        <h3>JavaScript</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.<br>Itaque libero quas mollitia
+                            voluptatum
+                            neque consectetur velit consequatur tempora accusantium minus.</p>
+                    </div>
+                </div>
+
+
+                <div class="item">
+                    <div class="card card5Color">
+                        <img id="cardImg" src="./assets/logoGit.svg" alt="Git Logo">
+                        <h3>Git</h3>
+                        <p>La imagen de Jesucristo corona la cima del monte Corcovado, ubicado en el Parque Nacional de
+                            la Tijuca.<br>El monte alcanza unos 710 metros sobre el nivel del mar.</p>
+                    </div>
+                </div>
+
+
+                <div class="item">
+                    <div class="card card6Color">
+                        <img id="cardImgGitHub" src="./assets/logoGitHub.svg" alt="Git Hub Logo">
+                        <h3>GitHub</h3>
+                        <p>La imagen de Jesucristo corona la cima del monte Corcovado, ubicado en el Parque Nacional de
+                            la Tijuca.<br>El monte alcanza unos 710 metros sobre el nivel del mar.</p>
+                    </div>
+                </div>
+
+
+                <div class="item">
+                    <div class="card card7Color">
+                        <img id="cardImgGitHub" src="./assets/logoReact.svg" alt="ReactJS Logo">
+                        <h3>ReactJS</h3>
+                        <p>O Obelisco de Buenos Aires é um monumento histórico da cidade de Buenos Aires, Argentina.<br>
+                            Foi
+                            erguido na Praça da República, no cruzamento das avenidas Corrientes e 9 de julio, em
+                            comemoração ao quarto centenário da fundação da cidade.</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="card card8Color">
+                        <img id="cardImgGitHub" src="./assets/typeScriptLogo.svg" alt="TypeScript Logo">
+                        <h3>TypeScript</h3>
+                        <p>La Torre Eiffel es el monumento más famoso de Paris y símbolo de la capital francesa.<br>
+                            Fue construido con motivo de la Exposición Mundial de 1889, de 300 metros de altura y 10.000
+                            toneladas de peso.</p>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+
+
+        <footer>
+
+            <div class="info">
+
+                <p>E-mail: alanbem6@gmail.com</p>
+                <p>Feito por Alan Stiegler</p>
+
+            </div>
+
+            <div class="social-links">
+
+                <a href="https://github.com/AStiegler" target="_blank">
+                    <img src="./assets/githubSvg.svg" alt="Logo do Git Hub">
+                </a>
+
+                <a href="https://www.linkedin.com/in/alan-bem-a27993217/" target="_blank">
+                    <img src="./assets/linkedinSvg.svg" alt="Logo do Linkedin">
+                </a>
+
+                <a href="https://twitter.com/alanstiegler" target="_blank">
+                    <img src="./assets/twitterSvg.svg" alt="Logo do Twitter">
+                </a>
+
+                <a href="https://www.instagram.com/alanstiegler/" target="_blank">
+                    <img src="./assets/instagramSvg.svg" alt="Logo do instagram">
+                </a>
+
+            </div>
+
+
+            <a href="#Início" class="backToTopButton">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="20" cy="20" r="20" fill="#e0004d" />
+                    <path d="M20 27V13" stroke="white" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path d="M13 20L20 13L27 20" stroke="white" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </a>
+
+        </footer>
+
+    </section>
 
 
     <script src="macbook.js"></script>

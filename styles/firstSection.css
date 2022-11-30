@@ -8,19 +8,20 @@
     justify-content: space-around;
     align-items: center;
 
-    background: linear-gradient(to bottom right, var(--blue-dark) 50%, var(--pink) 50%);
+    background: linear-gradient(90deg,#050939 0%,#141a61 47.57%,#050939 93.19%);
+    
 }
 #divApresent {
     display: flex;
     flex-direction: column;
-    align-items: center;
-
+    
     width: 55rem;
 }
 #divApresent h1 {
     font-size: 6.5rem;
     font-family: 'Sono';
     font-weight: 600;
+    text-align: start;
     
     color: white;
 }
@@ -28,7 +29,7 @@
     font-size: 4rem;
     font-family: 'Open Sans';
     font-weight: 600;
-
+    text-align: start;
     color: var(--pink);
 }
 #divApresent a {
@@ -58,6 +59,9 @@
     
     cursor: pointer;
 }
+#divApresent button:hover {
+    filter: brightness(1.5);
+}
 
 .line {
     border-right: 2px solid rgba(255, 255, 255, 0.75);
@@ -76,7 +80,7 @@
 .type-animation {
     animation:
     cursor 500ms steps(28) infinite normal,
-    type 2.5s steps(28) 1s normal both;
+    type 2.2s steps(28) 1s normal both;
 }
 
 @keyframes type {
@@ -99,117 +103,3 @@
     }
 }
 
-.gitHub {
-    position: absolute;
-    margin-top: 2.1rem;
-    margin-left: -59.1rem;
-    width: 25.5rem;
-    height: 16.1rem;
-}
-.gitHubHide {
-    display: none;
-}
-
-.gitHubProfile {
-    position: absolute;
-    width: 50.7rem;
-    height: 31.9rem;
-    margin-top: 2rem;
-    margin-left: -59.2rem;
-}
-.arrow-back {
-    position: absolute;
-    margin-top: 23rem;
-    margin-left: -56.1rem;
-    
-    width: 7rem;
-
-    cursor: pointer;
-}
-.arrow-backHide {
-    display: none;
-}
-.gitHubProfileHide {
-    display: none;
-}
-
-
-.sobreMim {
-    position: absolute;
-    margin-top: 2.1rem;
-    margin-left: -33.6rem;
-
-    width: 25rem;
-    height: 16.1rem;
-}
-.sobreMimHide {
-    display: none;
-}
-.pageSobreMim {
-    width: 50.5rem;
-    height: 31.7rem;
-    position: absolute;
-    margin-top: 2.1rem;
-    margin-left: -59.1rem;
-}
-.pageSobreMimHide {
-    display: none;
-}
-.arrow-backObra {
-    position: absolute;
-    margin-top: 3rem;
-    margin-left: -58rem;
-    width: 5.5rem;
-}
-.arrow-backObraHide {
-    display: none;
-}
-
-
-.cardHabilidades {
-    position: absolute;
-    margin-top: 18.2rem;
-    margin-left: -59.1rem;
-
-    width: 25.5rem;
-    height: 15.6rem;
-}
-.cardHabilidadesHide {
-    display: none;
-}
-.pageHabilidades {
-    width: 50.5rem;
-    height: 31.7rem;
-    position: absolute;
-    margin-top: 2.1rem;
-    margin-left: -59.1rem;
-}
-.pageHabilidadesHide {
-    display: none;
-}
-
-
-
-
-
-.cardProjetos {
-    position: absolute;
-    margin-top: 18.2rem;
-    margin-left: -33.6rem;
-
-    width: 25rem;
-    height: 15.6rem;
-}
-.cardProjetosHide {
-    display: none;
-}
-.pageProjetos {
-    width: 50.5rem;
-    height: 31.7rem;
-    position: absolute;
-    margin-top: 2.1rem;
-    margin-left: -59.1rem;
-}
-.pageProjetosHide {
-    display: none;
-}

@@ -1,0 +1,52 @@
+.thirdSection {
+    display: flex;
+    flex-direction: column;
+
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(90deg,#050939 0%,#141a61 47.57%,#050939 93.19%);
+    border-top: 3px solid var(--pink);
+
+}
+
+.thirdSection h1 {
+    font-size: 7.6rem;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--pink);
+    margin-top: 13rem;
+}
+.area2H1 {
+    visibility: hidden;
+}
+
+
+
+.divSobreMim {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: -15rem;
+    margin-top: 7rem;
+}
+
+.divSobreImg img {
+    width: 80rem;
+}
+
+.divSobreTxt {
+    margin-top: -8rem;
+    margin-left: -10rem;
+    font-size: 2.5rem;
+    font-family: inherit;
+    font-weight: 400;
+    color: white;
+    width: 80rem;
+}
+
+.sobreMimMenu {
+    display: flex;
+    flex-direction: column;
+    margin-top: -7rem;
+    gap: 2rem;
+}

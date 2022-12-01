@@ -103,3 +103,121 @@
     }
 }
 
+.cardProjetos {
+    position: absolute;
+    margin-top: 2.1rem;
+    margin-left: -59.1rem;
+    width: 25.5rem;
+    height: 16.1rem;
+    cursor: pointer;
+}
+.cardProjetosHide {
+    display: none;
+}
+.pageProjetos {
+    width: 50.5rem;
+    height: 31.7rem;
+    position: absolute;
+    margin-top: 2.1rem;
+    margin-left: -59.1rem;
+}
+.pageProjetosHide {
+    display: none;
+}
+
+
+
+.sobreMim {
+    position: absolute;
+    margin-top: 2.1rem;
+    margin-left: -33.6rem;
+
+    width: 25rem;
+    height: 16.1rem;
+    cursor: pointer;
+}
+.sobreMimHide {
+    display: none;
+}
+.pageSobreMim {
+    width: 50.5rem;
+    height: 31.7rem;
+    position: absolute;
+    margin-top: 2.1rem;
+    margin-left: -59.1rem;
+}
+.pageSobreMimHide {
+    display: none;
+}
+.arrow-backObra {
+    position: absolute;
+    margin-top: 3rem;
+    margin-left: -58rem;
+    width: 5.5rem;
+}
+.arrow-backObraHide {
+    display: none;
+}
+
+
+.cardHabilidades {
+    position: absolute;
+    margin-top: 18.2rem;
+    margin-left: -59.1rem;
+
+    width: 25.5rem;
+    height: 15.6rem;
+    cursor: pointer;
+}
+.cardHabilidadesHide {
+    display: none;
+}
+.pageHabilidades {
+    width: 50.5rem;
+    height: 31.7rem;
+    position: absolute;
+    margin-top: 2.1rem;
+    margin-left: -59.1rem;
+}
+.pageHabilidadesHide {
+    display: none;
+}
+
+.gitHub {
+    position: absolute;
+    margin-top: 18.2rem;
+    margin-left: -33.6rem;
+
+    width: 25rem;
+    height: 15.6rem;
+}
+.gitHubHide {
+    display: none;
+}
+
+.gitHubProfile {
+    position: absolute;
+    width: 50.7rem;
+    height: 31.9rem;
+    margin-top: 2rem;
+    margin-left: -59.2rem;
+}
+.arrow-back {
+    position: absolute;
+    margin-top: 23rem;
+    margin-left: -56.1rem;
+    
+    width: 7rem;
+
+    cursor: pointer;
+}
+.arrow-backHide {
+    display: none;
+}
+.gitHubProfileHide {
+    display: none;
+}
+
+
+
+
